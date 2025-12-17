@@ -2,10 +2,10 @@ import StatCard from "./components/StatCard";
 
 export default function Home() {
   return (
-    <div className="p-8">
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Dashboard</h1>
-        <p className="text-gray-600">Welcome to your medical management system</p>
+    <div className="p-4 sm:p-6 lg:p-8">
+      <div className="mb-6 sm:mb-8">
+        <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Dashboard</h1>
+        <p className="text-sm sm:text-base text-gray-600">Welcome to your medical management system</p>
       </div>
 
       {/* Stats Grid */}

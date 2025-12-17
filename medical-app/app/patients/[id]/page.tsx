@@ -31,7 +31,7 @@ export default function PatientDetailPage({ params }: { params: { id: string } }
   const patient = getPatientDetails(params.id);
 
   return (
-    <div className="p-8">
+    <div className="p-4 sm:p-6 lg:p-8">
       <div className="mb-6">
         <Link
           href="/patients"
@@ -39,21 +39,21 @@ export default function PatientDetailPage({ params }: { params: { id: string } }
         >
           ← Back to Patients
         </Link>
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">{patient.name}</h1>
-            <p className="text-gray-600">Patient ID: #{patient.id}</p>
+            <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">{patient.name}</h1>
+            <p className="text-sm sm:text-base text-gray-600">Patient ID: #{patient.id}</p>
           </div>
-          <div className="flex gap-3">
+          <div className="flex flex-col sm:flex-row gap-3">
             <Link
               href={`/patients/${patient.id}/edit`}
-              className="medical-button-secondary"
+              className="medical-button-secondary text-center"
             >
               Edit Patient
             </Link>
             <Link
               href={`/appointments/new?patient=${patient.id}`}
-              className="medical-button-primary"
+              className="medical-button-primary text-center"
             >
               Schedule Appointment
             </Link>
@@ -61,13 +61,13 @@ export default function PatientDetailPage({ params }: { params: { id: string } }
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
         {/* Main Info */}
         <div className="lg:col-span-2 space-y-6">
           {/* Personal Information */}
           <div className="medical-card">
             <h2 className="text-xl font-semibold text-gray-900 mb-4">Personal Information</h2>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <p className="text-sm text-gray-600">Age</p>
                 <p className="text-base font-medium text-gray-900">{patient.age} years</p>

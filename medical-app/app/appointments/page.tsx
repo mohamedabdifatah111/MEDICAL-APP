@@ -64,36 +64,36 @@ const getStatusColor = (status: string) => {
 
 export default function AppointmentsPage() {
   return (
-    <div className="p-8">
-      <div className="flex items-center justify-between mb-8">
+    <div className="p-4 sm:p-6 lg:p-8">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 sm:mb-8 gap-4">
         <div>
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">Appointments</h1>
-          <p className="text-gray-600">Manage and schedule patient appointments</p>
+          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Appointments</h1>
+          <p className="text-sm sm:text-base text-gray-600">Manage and schedule patient appointments</p>
         </div>
         <Link
           href="/appointments/new"
-          className="medical-button-primary"
+          className="medical-button-primary whitespace-nowrap text-center"
         >
           + Schedule Appointment
         </Link>
       </div>
 
       {/* Filters */}
-      <div className="mb-6 flex gap-4">
+      <div className="mb-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
         <input
           type="date"
-          className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
         />
-        <select className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <select className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base">
           <option>All Status</option>
           <option>Confirmed</option>
           <option>Pending</option>
           <option>Cancelled</option>
         </select>
-        <select className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <select className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base">
           <option>All Doctors</option>
-          <option>Dr. Sarah Smith</option>
-          <option>Dr. Michael Johnson</option>
+          <option>Dr. Maryam Ali</option>
+          <option>Dr. Abdul Juma</option>
         </select>
       </div>
 
@@ -165,11 +165,11 @@ export default function AppointmentsPage() {
       </div>
 
       {/* Calendar View Toggle */}
-      <div className="mt-6 flex items-center justify-between">
-        <p className="text-sm text-gray-700">
+      <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p className="text-xs sm:text-sm text-gray-700 text-center sm:text-left">
           Showing <span className="font-medium">5</span> appointments
         </p>
-        <button className="medical-button-secondary">
+        <button className="medical-button-secondary w-full sm:w-auto">
           View Calendar
         </button>
       </div>

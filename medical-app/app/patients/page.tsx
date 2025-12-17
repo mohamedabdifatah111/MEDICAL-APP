@@ -56,28 +56,28 @@ const patients = [
 
 export default function PatientsPage() {
   return (
-    <div className="p-8">
-      <div className="flex items-center justify-between mb-8">
+    <div className="p-4 sm:p-6 lg:p-8">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 sm:mb-8 gap-4">
         <div>
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">Patients</h1>
-          <p className="text-gray-600">Manage patient records and information</p>
+          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Patients</h1>
+          <p className="text-sm sm:text-base text-gray-600">Manage patient records and information</p>
         </div>
         <Link
           href="/patients/new"
-          className="medical-button-primary"
+          className="medical-button-primary whitespace-nowrap text-center"
         >
           + Add New Patient
         </Link>
       </div>
 
       {/* Search and Filters */}
-      <div className="mb-6 flex gap-4">
+      <div className="mb-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
         <input
           type="text"
-          placeholder="Search patients by name, email, or phone..."
-          className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="Search patients..."
+          className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
         />
-        <select className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <select className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base">
           <option>All Status</option>
           <option>Active</option>
           <option>Inactive</option>
@@ -158,16 +158,16 @@ export default function PatientsPage() {
       </div>
 
       {/* Pagination */}
-      <div className="mt-6 flex items-center justify-between">
-        <p className="text-sm text-gray-700">
+      <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p className="text-xs sm:text-sm text-gray-700 text-center sm:text-left">
           Showing <span className="font-medium">1</span> to <span className="font-medium">5</span> of{" "}
           <span className="font-medium">1,247</span> patients
         </p>
         <div className="flex gap-2">
-          <button className="px-4 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-50">
+          <button className="px-3 sm:px-4 py-2 border border-gray-300 rounded-lg text-xs sm:text-sm hover:bg-gray-50">
             Previous
           </button>
-          <button className="px-4 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-50">
+          <button className="px-3 sm:px-4 py-2 border border-gray-300 rounded-lg text-xs sm:text-sm hover:bg-gray-50">
             Next
           </button>
         </div>

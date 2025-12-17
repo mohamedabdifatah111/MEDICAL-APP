@@ -33,7 +33,7 @@ export default function NewPatientPage() {
   };
 
   return (
-    <div className="p-8">
+    <div className="p-4 sm:p-6 lg:p-8">
       <div className="mb-6">
         <Link
           href="/patients"
@@ -41,13 +41,13 @@ export default function NewPatientPage() {
         >
           ← Back to Patients
         </Link>
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Add New Patient</h1>
-        <p className="text-gray-600">Enter patient information to create a new record</p>
+        <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Add New Patient</h1>
+        <p className="text-sm sm:text-base text-gray-600">Enter patient information to create a new record</p>
       </div>
 
-      <div className="max-w-3xl">
+      <div className="max-w-3xl mx-auto">
         <form onSubmit={handleSubmit} className="medical-card space-y-6">
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
                 First Name *
@@ -79,7 +79,7 @@ export default function NewPatientPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label htmlFor="dateOfBirth" className="block text-sm font-medium text-gray-700 mb-2">
                 Date of Birth *
@@ -116,7 +116,7 @@ export default function NewPatientPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
                 Phone Number *
@@ -166,7 +166,7 @@ export default function NewPatientPage() {
             />
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label htmlFor="bloodType" className="block text-sm font-medium text-gray-700 mb-2">
                 Blood Type
@@ -208,7 +208,7 @@ export default function NewPatientPage() {
 
           <div className="border-t pt-6">
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Emergency Contact</h3>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label htmlFor="emergencyContact" className="block text-sm font-medium text-gray-700 mb-2">
                   Contact Name *

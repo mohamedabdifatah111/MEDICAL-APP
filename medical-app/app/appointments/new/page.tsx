@@ -28,7 +28,7 @@ export default function NewAppointmentPage() {
   };
 
   return (
-    <div className="p-8">
+    <div className="p-4 sm:p-6 lg:p-8">
       <div className="mb-6">
         <Link
           href="/appointments"
@@ -36,11 +36,11 @@ export default function NewAppointmentPage() {
         >
           ← Back to Appointments
         </Link>
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Schedule New Appointment</h1>
-        <p className="text-gray-600">Fill in the details to schedule a new appointment</p>
+        <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Schedule New Appointment</h1>
+        <p className="text-sm sm:text-base text-gray-600">Fill in the details to schedule a new appointment</p>
       </div>
 
-      <div className="max-w-2xl">
+      <div className="max-w-2xl mx-auto">
         <form onSubmit={handleSubmit} className="medical-card space-y-6">
           <div>
             <label htmlFor="patient" className="block text-sm font-medium text-gray-700 mb-2">
@@ -55,7 +55,7 @@ export default function NewAppointmentPage() {
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="">Select a patient</option>
-              <option value="1">John Doe</option>
+              <option value="1">Salman Soy</option>
               <option value="2">Jane Smith</option>
               <option value="3">Robert Johnson</option>
               <option value="4">Emily Davis</option>
@@ -76,13 +76,13 @@ export default function NewAppointmentPage() {
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="">Select a doctor</option>
-              <option value="dr-smith">Dr. Sarah Smith</option>
-              <option value="dr-johnson">Dr. Michael Johnson</option>
+              <option value="dr-ali">Dr. Maryam Ali</option>
+              <option value="dr-juma">Dr. Abdul Juma</option>
               <option value="dr-williams">Dr. Emily Williams</option>
             </select>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label htmlFor="date" className="block text-sm font-medium text-gray-700 mb-2">
                 Date *

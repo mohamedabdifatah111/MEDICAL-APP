@@ -30,8 +30,8 @@ export default function RootLayout({
       >
         <div className="flex min-h-screen bg-gray-50">
           <Navigation />
-          <main className="flex-1 overflow-x-hidden">
-        {children}
+          <main className="flex-1 overflow-x-hidden lg:ml-0">
+            {children}
           </main>
         </div>
       </body>
