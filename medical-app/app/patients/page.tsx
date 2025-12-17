@@ -4,11 +4,11 @@ import Link from "next/link";
 const patients = [
   {
     id: 1,
-    name: "Salman Soy",
+    name: "John Doe",
     age: 45,
     gender: "Male",
     phone: "+1 (555) 123-4567",
-    email: "salman.soy@email.com",
+    email: "john.doe@email.com",
     lastVisit: "2024-01-15",
     status: "Active",
   },

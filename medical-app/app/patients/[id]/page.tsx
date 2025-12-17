@@ -5,11 +5,11 @@ const getPatientDetails = (id: string) => {
   const patients: Record<string, any> = {
     "1": {
       id: 1,
-      name: "Salman Soy",
+      name: "John Doe",
       age: 45,
       gender: "Male",
       phone: "+1 (555) 123-4567",
-      email: "salman.soy@email.com",
+      email: "john.doe@email.com",
       address: "123 Main St, City, State 12345",
       dateOfBirth: "1979-03-15",
       bloodType: "O+",
@@ -18,9 +18,9 @@ const getPatientDetails = (id: string) => {
       lastVisit: "2024-01-15",
       status: "Active",
       medicalHistory: [
-        { date: "2024-01-15", diagnosis: "Hypertension", doctor: "Dr. Maryam Ali" },
-        { date: "2023-11-20", diagnosis: "Annual Checkup", doctor: "Dr. Maryam Ali" },
-        { date: "2023-08-10", diagnosis: "Flu", doctor: "Dr. Abdul Juma" },
+        { date: "2024-01-15", diagnosis: "Hypertension", doctor: "Dr. Smith" },
+        { date: "2023-11-20", diagnosis: "Annual Checkup", doctor: "Dr. Smith" },
+        { date: "2023-08-10", diagnosis: "Flu", doctor: "Dr. Johnson" },
       ],
     },
   };

@@ -4,8 +4,8 @@ import Link from "next/link";
 const appointments = [
   {
     id: 1,
-    patient: "Salman Soy",
-    doctor: "Dr. Maryam Ali",
+    patient: "John Doe",
+    doctor: "Dr. Sarah Smith",
     date: "2024-01-25",
     time: "09:00 AM",
     type: "General Checkup",
@@ -14,7 +14,7 @@ const appointments = [
   {
     id: 2,
     patient: "Jane Smith",
-    doctor: "Dr. Abdul Juma",
+    doctor: "Dr. Michael Johnson",
     date: "2024-01-25",
     time: "10:30 AM",
     type: "Follow-up",
@@ -23,7 +23,7 @@ const appointments = [
   {
     id: 3,
     patient: "Robert Johnson",
-    doctor: "Dr. Maryam Ali",
+    doctor: "Dr. Sarah Smith",
     date: "2024-01-25",
     time: "02:00 PM",
     type: "Consultation",
@@ -32,7 +32,7 @@ const appointments = [
   {
     id: 4,
     patient: "Emily Davis",
-    doctor: "Dr. Abdul Juma",
+    doctor: "Dr. Michael Johnson",
     date: "2024-01-26",
     time: "11:00 AM",
     type: "Annual Exam",
@@ -41,7 +41,7 @@ const appointments = [
   {
     id: 5,
     patient: "Michael Brown",
-    doctor: "Dr. Maryam Ali",
+    doctor: "Dr. Sarah Smith",
     date: "2024-01-26",
     time: "03:30 PM",
     type: "Follow-up",
@@ -92,8 +92,8 @@ export default function AppointmentsPage() {
         </select>
         <select className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
           <option>All Doctors</option>
-          <option>Dr. Maryam Ali</option>
-          <option>Dr. Abdul Juma</option>
+          <option>Dr. Sarah Smith</option>
+          <option>Dr. Michael Johnson</option>
         </select>
       </div>
 

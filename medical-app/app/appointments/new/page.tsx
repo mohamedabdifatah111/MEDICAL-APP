@@ -55,7 +55,7 @@ export default function NewAppointmentPage() {
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="">Select a patient</option>
-              <option value="1">Salman Soy</option>
+              <option value="1">John Doe</option>
               <option value="2">Jane Smith</option>
               <option value="3">Robert Johnson</option>
               <option value="4">Emily Davis</option>
@@ -76,8 +76,8 @@ export default function NewAppointmentPage() {
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="">Select a doctor</option>
-              <option value="dr-ali">Dr. Maryam Ali</option>
-              <option value="dr-juma">Dr. Abdul Juma</option>
+              <option value="dr-smith">Dr. Sarah Smith</option>
+              <option value="dr-johnson">Dr. Michael Johnson</option>
               <option value="dr-williams">Dr. Emily Williams</option>
             </select>
           </div>
